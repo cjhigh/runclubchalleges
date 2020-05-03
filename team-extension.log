@@ -1,0 +1,25 @@
+2020-05-03T11:30:54.981Z - info:   [25041] *** FOLDER: /Users/christian/Documents/Projects/runclubchallenges ***
+2020-05-03T11:30:54.982Z - info:   [25041] AzureReposVSCode/1.161.0 (VSCode 1.44.2; Darwin 19.4.0; Node 12.8.1)
+2020-05-03T11:30:54.982Z - debug:  [25041] Looking for an External Context at /Users/christian/Documents/Projects/runclubchallenges
+2020-05-03T11:30:54.983Z - debug:  [25041] No External Context at /Users/christian/Documents/Projects/runclubchallenges
+2020-05-03T11:30:54.987Z - debug:  [25041] Looking for TFVC repository at /Users/christian/Documents/Projects/runclubchallenges
+2020-05-03T11:30:54.987Z - debug:  [25041] TFVC Creating Tfvc object with localPath='undefined'
+2020-05-03T11:30:54.988Z - debug:  [25041] Using TFS proxy: 
+2020-05-03T11:30:54.988Z - debug:  [25041] TFVC Retrieved from settings; localPath='/Users/christian/TEE-CLC-14.123.1/tf'
+2020-05-03T11:30:54.990Z - debug:  [25041] TFVC Repository created with repositoryRootFolder='/Users/christian/Documents/Projects/runclubchallenges'
+2020-05-03T11:30:54.991Z - debug:  [25041] TFVC Repository.CheckVersion
+2020-05-03T11:30:54.992Z - debug:  [25041] TFVC: tf add -noprompt -?
+2020-05-03T11:30:54.995Z - debug:  [25041] TFVC: spawned new process (duration: 3ms)
+2020-05-03T11:30:55.000Z - debug:  [25041] TFVC: spawned new process (duration: 4ms)
+2020-05-03T11:30:56.032Z - debug:  [25041] TFVC: add exit code: 1 (duration: 1040ms)
+2020-05-03T11:30:56.034Z - debug:  [25041] TFVC errors (via stderr): Exception in thread "main" java.lang.UnsatisfiedLinkError: com.microsoft.tfs.jni.internal.platformmisc.NativePlatformMisc.nativeGetEnvironmentVariable(Ljava/lang/String;)Ljava/lang/String;
+	at com.microsoft.tfs.jni.internal.platformmisc.NativePlatformMisc.nativeGetEnvironmentVariable(Native Method)
+	at com.microsoft.tfs.jni.internal.platformmisc.NativePlatformMisc.getEnvironmentVariable(NativePlatformMisc.java:121)
+	at com.microsoft.tfs.jni.PlatformMiscUtils.getEnvironmentVariable(PlatformMiscUtils.java:47)
+	at com.microsoft.tfs.core.persistence.VersionedVendorFilesystemPersistenceStore.makeDirectoryForVendorApplicationVersion(VersionedVendorFilesystemPersistenceStore.java:96)
+	at com.microsoft.tfs.core.persistence.VersionedVendorFilesystemPersistenceStore.<init>(VersionedVendorFilesystemPersistenceStore.java:60)
+	at com.microsoft.tfs.core.config.persistence.DefaultPersistenceStoreProvider.<clinit>(DefaultPersistenceStoreProvider.java:42)
+	at com.microsoft.tfs.client.common.logging.TELoggingConfiguration.configure(TELoggingConfiguration.java:38)
+	at com.microsoft.tfs.client.clc.vc.Main.main(Main.java:23)
+
+2020-05-03T11:30:56.034Z - error:  [25041] Execution of the TFVC command line failed unexpectedly.
